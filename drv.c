@@ -54,6 +54,7 @@ extern const struct backend backend_synaptics;
 extern const struct backend backend_virtgpu;
 extern const struct backend backend_udl;
 extern const struct backend backend_vkms;
+extern const struct backend backend_nvidia;
 
 static const struct backend *drv_get_backend(int fd)
 {
@@ -86,7 +87,7 @@ static const struct backend *drv_get_backend(int fd)
 #endif
 		&backend_evdi,	   &backend_marvell, &backend_meson,	 &backend_nouveau,
 		&backend_komeda,   &backend_radeon,  &backend_synaptics, &backend_virtgpu,
-		&backend_udl,	   &backend_virtgpu, &backend_vkms
+		&backend_udl,	   &backend_virtgpu, &backend_vkms,      &backend_nvidia
 	};
 
 	for (i = 0; i < ARRAY_SIZE(backend_list); i++) {

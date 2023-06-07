@@ -44,6 +44,7 @@ filegroup {
         "i915.c",
         "mediatek.c",
         "msm.c",
+        "nvidia.c",
         "rockchip.c",
         "vc4.c",
         "virtgpu.c",
