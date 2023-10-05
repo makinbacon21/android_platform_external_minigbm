@@ -46,6 +46,7 @@ extern const struct backend backend_marvell;
 extern const struct backend backend_mediatek;
 extern const struct backend backend_meson;
 extern const struct backend backend_nouveau;
+extern const struct backend backend_nvidia_drm;
 extern const struct backend backend_komeda;
 extern const struct backend backend_radeon;
 extern const struct backend backend_rockchip;
@@ -68,10 +69,10 @@ static const struct backend *drv_backend_list[] = {
 #ifdef DRV_VC4
 	&backend_vc4,
 #endif
-	&backend_evdi,	    &backend_komeda,	&backend_marvell, &backend_mediatek,
-	&backend_meson,	    &backend_nouveau,	&backend_radeon,  &backend_rockchip,
-	&backend_sun4i_drm, &backend_synaptics, &backend_udl,	  &backend_virtgpu,
-	&backend_vkms
+	&backend_evdi,      &backend_komeda,    &backend_marvell,       &backend_mediatek,
+	&backend_meson,     &backend_nouveau,   &backend_nvidia_drm,    &backend_radeon,
+	&backend_rockchip,  &backend_sun4i_drm, &backend_synaptics,     &backend_udl,
+	&backend_virtgpu,   &backend_vkms
 };
 
 void drv_preload(bool load)
